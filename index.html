@@ -31,13 +31,100 @@
         a:hover {
             border-bottom: 1px solid #fff;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #fff;
+        }
+
+        th {
+            background-color: #222;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #333;
+        }
+
+        tr:hover {
+            background-color: #555;
+        }
+
+        .inline {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .org-name {
+            font-size: 5rem;
+        }
+        
     </style>
 </head>
 
 <body>
-    <h1>101 Bytes</h1>
-    <p>101 Bytes is currently under development.</p>
-    <p>You can mail your suggestions, use case, or feedback at <a href="mailto:tech.101bytes@outlook.com">tech.101bytes@outlook.com</a>.</p>
+    <span class="inline org-name">1<span class="inline org-name" style="color: #00de00">0</span>1 BYTES</span><br>
+    <span id="site-datetime"></span>
+    <p><b>101 Bytes</b> is currently under development.<br>
+    You can mail your suggestions, use case, or feedback at <a href="mailto:tech.101bytes@outlook.com">tech.101bytes@outlook.com</a>.<br>
+    or mail your queries or support related issues at <a href="mailto:tech.101bytes+support@outlook.com">tech.101bytes+support@outlook.com</a></p>
+    <table>
+        <thead>
+          <tr>
+            <th>Pipeline Section</th>
+            <th>Branch</th>
+            <th>Update Frequency</th>
+            <th>Task</th>
+            <th>Last Updated</th>
+            <th>Support Mail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>dev</td>
+            <td>dev</td>
+            <td>every day</td>
+            <td>Devlopment</td>
+            <td id="dev-lastupdate">datetime</td>
+            <td><a href="mailto:tech.101bytes+dev@outlook.com">tech.101bytes+dev@outlook.com</a></td>
+          </tr>
+          <tr>
+            <td>beta</td>
+            <td>beta</td>
+            <td>every Wednesday</td>
+            <td>Testing</td>
+            <td id="beta-lastupdate">datetime</td>
+            <td><a href="mailto:tech.101bytes+beta@outlook.com">tech.101bytes+beta@outlook.com</a></td>
+          </tr>
+          <tr>
+            <td>staging</td>
+            <td>main</td>
+            <td>every Friday</td>
+            <td>Performace Testing + Prod Ready</td>
+            <td id="staging-lastupdate">datetime</td>
+            <td><a href="mailto:tech.101bytes+staging@outlook.com">tech.101bytes+staging@outlook.com</a></td>
+          </tr>
+          <tr>
+            <td>production</td>
+            <td>main</td>
+            <td>every Tuesday</td>
+            <td>Stable pipelines</td>
+            <td id="prod-lastupdate">datetime</td>
+            <td><a href="mailto:tech.101bytes+prod@outlook.com">tech.101bytes+prod@outlook.com</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <footer>
+        <span class="inline">Copyright 2023-<span class="inline" id="date"></span> by Arijit Bhowmick. All Rights Reserved. 101 Bytes is Powered by 101 Bytes.</span>
+        <script src="/assets/js/main.js"></script>
+      </footer>
 </body>
 
 </html>

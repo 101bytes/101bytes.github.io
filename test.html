@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stream Update Schedule</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #fff;
+    }
+
+    th {
+      background-color: #222;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #333;
+    }
+
+    tr:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>publish stream</th>
+      <th>branch</th>
+      <th>update frequency</th>
+      <th>last updated</th>
+      <th>support mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dev</td>
+      <td>dev</td>
+      <td>every day</td>
+      <td>datetime</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>beta</td>
+      <td>beta</td>
+      <td>every Wednesday</td>
+      <td>datetime</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>staging</td>
+      <td>main</td>
+      <td>every Friday</td>
+      <td>datetime</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>production</td>
+      <td>main</td>
+      <td>every Tuesday</td>
+      <td>datetime</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
