@@ -1,0 +1,14 @@
+{
+ "dev":{
+    "last_updated": "16.04.2024"
+  },
+  "beta":{
+    "last_updated": "12.04.2024"
+  },
+  "staging":{
+    "last_updated": "13.04.2024"
+  },
+  "prod":{
+    "last_updated": "09.04.2024"
+  }
+}
