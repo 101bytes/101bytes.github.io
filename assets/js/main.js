@@ -1,4 +1,4 @@
-var latest_update_log_filename="03-05-2024.json";
+var latest_update_log_filename="06-05-2024.json";
 
 function DateTime(return_type){
     var datetime_now = new Date();
